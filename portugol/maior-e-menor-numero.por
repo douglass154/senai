@@ -1,4 +1,4 @@
-programa {
+programa {
 	// Elabore um algoritmo usando operações lógicas para ler 3
 	// números e escrever:
 
@@ -6,10 +6,13 @@ programa {
 	// • O maior número;
 	// • O menor número;
 	
-	funcao inicio() {
+	funcao inicio() {
 		// Declarando variáveis
 		inteiro primeiroNumero, segundoNumero, terceiroNumero, maiorNumero, menorNumero
 		cadeia nome
+
+		maiorNumero = 0
+		menorNumero = 0
 
 		// Solicitando informações do usuário
 		escreva ("Seu nome: ")
@@ -25,19 +28,24 @@ programa {
 		leia(terceiroNumero)
 		limpa()
 
-		maiorNumero = primeiroNumero
-		menorNumero = primeiroNumero
+		// Algoritmo primeiro número
+		se (primeiroNumero > segundoNumero e primeiroNumero > terceiroNumero) {
+			maiorNumero = primeiroNumero
+		} senao se (primeiroNumero < segundoNumero e primeiroNumero < terceiroNumero) {
+			menorNumero = primeiroNumero
+		}
 
-		// Algoritmo
-		se (segundoNumero > maiorNumero) {
+		// Algoritmo segundo número
+		se (segundoNumero > primeiroNumero e segundoNumero > terceiroNumero) {
 			maiorNumero = segundoNumero
-		} senao se (segundoNumero < maiorNumero) {
+		} senao se (segundoNumero < primeiroNumero e segundoNumero < terceiroNumero) {
 			menorNumero = segundoNumero
 		}
 
-		senao se (terceiroNumero > maiorNumero) {
+		// Algoritmo terceiro número
+		se (terceiroNumero > primeiroNumero e terceiroNumero > segundoNumero) {
 			maiorNumero = terceiroNumero
-		} senao se (terceiroNumero < maiorNumero) {
+		} senao se (terceiroNumero < primeiroNumero e terceiroNumero < segundoNumero) {
 			menorNumero = terceiroNumero
 		}
 		
@@ -56,7 +64,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 655; 
+ * @POSICAO-CURSOR = 1383; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
