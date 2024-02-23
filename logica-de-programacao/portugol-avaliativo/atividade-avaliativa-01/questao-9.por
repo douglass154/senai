@@ -1,6 +1,8 @@
-programa {
+programa
+ {
 	
-	funcao inicio() {
+	funcao inicio()
+ {
 		cadeia nome
 		inteiro valorTotalDoEmprestimo, rendaMensalDoSolicitante, numeroPrestacoes
 		real valorPrestacao
@@ -20,7 +22,7 @@ programa {
 		valorPrestacao = valorTotalDoEmprestimo / numeroPrestacoes
 		
 
-		se (valorTotalDoEmprestimo >= 10 * rendaMensalDoSolicitante e valorPrestacao <= (30 * rendaMensalDoSolicitante) / 100 ) {
+		se (valorTotalDoEmprestimo <= 10 * rendaMensalDoSolicitante e valorPrestacao <= (30 * rendaMensalDoSolicitante) / 100 ) {
 			escreva("Caro ", nome , " o senhor(a) está apto a receber o emprestimo")
 		} senao {
 			escreva("Caro ", nome , " o senhor(a) NÃO está apto a receber o emprestimo")
