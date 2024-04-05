@@ -1,3 +1,3 @@
-#Conhecimentos e Exercícios do Senai
+# Conhecimentos e Exercícios do Senai
 
 Portugol, python, c
