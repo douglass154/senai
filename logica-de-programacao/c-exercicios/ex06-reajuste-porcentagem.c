@@ -6,7 +6,7 @@ int main() {
 	
 	float valor, desconto, acrescimo, valorDescontado, valorAcrescido;
 	
-	printf("Digite um número qualquer: ");
+	printf("Digite um nï¿½mero qualquer: ");
 	scanf("%f", &valor);
 	
 	desconto = valor * 0.10;
