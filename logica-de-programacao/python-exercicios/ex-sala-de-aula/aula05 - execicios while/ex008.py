@@ -8,16 +8,17 @@ maiorIdade = int(0);
 menorIdade = int(99999);
 quantidadeMulheres = int(0);
 
-print('Opções ||    Descrição');
-print('  1    ||    Adicionar');
-print('  2    || Exibir resultados');
-print('  3    ||      Sair');
+print('Opções ||       Descrição');
+print('  1    || Adicionar informações');
+print('  2    ||   Exibir resultados');
+print('  3    ||         Sair');
+opcao = str(input('Escolha a opção desejada: '));
 
-while True:
-    opcao = int(input('Escolha a opção desejada: '));
+while opcao != '3':
+    os.system('cls || clear');
     
     def escolhaOpcao(opcao):
-        if(opcao == 1):
+        if(opcao == '1'):
             idade = int(input('Digite sua idade: '));
             sexo = str(input('Digite seu sexo(M/F): '));
             salario = float(input('Digite seu salário: '));
@@ -31,6 +32,19 @@ while True:
             if((sexo == 'F' or sexo == 'f') and salario >= 5000):
                 quantidadeMulheres += 1;
         
-        if(opcao == 2):
+        if(opcao == '2'):
             mediaSalario = somaSalario / contadorSalario;
             print(f'Média salárial: {mediaSalario}');
+            print(f'Menor idade: {menorIdade}');
+            print(f'Maior idade: {maiorIdade}');
+            print(f'Quantidade de mulheres que recebem mais de R$5000: {quantidadeMulheres}');    
+
+        if(opcao == '3'):
+            print('Fim!!');
+    
+    escolhaOpcao(opcao);
+    print('Opções ||       Descrição');
+    print('  1    || Adicionar informações');
+    print('  2    ||   Exibir resultados');
+    print('  3    ||         Sair');
+    opcao = str(input('Escolha a opção desejada: '));
