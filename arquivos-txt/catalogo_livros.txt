@@ -1,0 +1,15 @@
+Nome do livro: Harry
+Autor: sei n
+Categoria: ficção
+Preço: 95.70
+
+Nome do livro: Solo leveling
+Autor: sei não
+Categoria: mangá
+Preço: 120.70
+
+Nome do livro: Jujutsu kaisen
+Autor: gege
+Categoria: mangá
+Preço: 145.95
+

@@ -1,0 +1,4 @@
+Nome: Douglas
+Idade: 19
+Peso: 75.90
+Altura: 1.95

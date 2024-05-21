@@ -152,7 +152,3 @@ while opcao != 0:
         print(f'Valor total final: {precoTotalFinal}')
         break
     
-    
-    
-    
-
