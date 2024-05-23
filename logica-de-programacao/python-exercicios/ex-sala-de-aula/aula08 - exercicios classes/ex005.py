@@ -21,9 +21,12 @@ for i in range(3):
     ));
     os.system('cls || clear');
 
-with open(arquivo, 'w') as arquivoDeLivros:
-    for livro in livros:
-        arquivoDeLivros.write(f'Nome do livro: {livro.nome}\nAutor: {livro.autor}\n');
-        arquivoDeLivros.write(f'Categoria: {livro.categoria}\nPreço: {livro.preco:.2f}\n\n');
+def salvar_arquivos(aquivos):
+    with open(arquivo, 'w') as arquivoDeLivros:
+        for arquivo in aquivos:
+            arquivoDeLivros.write(f'Nome do livro: {arquivo.nome}\nAutor: {arquivo.autor}\n');
+            arquivoDeLivros.write(f'Categoria: {arquivo.categoria}\nPreço: {arquivo.preco:.2f}\n\n');
+
+salvar_arquivos(livros)
 
 print('Dados salvos com sucesso!');
