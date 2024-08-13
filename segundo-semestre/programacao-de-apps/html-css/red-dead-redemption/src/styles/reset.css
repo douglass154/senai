@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Nova+Square&family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'red-dead';
+    src: url('../fonts/red-dead.ttf');
+}
+
+:root {
+    /* Fontes */
+    --square: "Nova Square", sans-serif;
+    --zilla: "Zilla Slab", sans-serif;
+    --karla: "Karla", sans-serif;
+
+    /* Cores */
+    --red: #cc0000;
+    --dark-red: #940000;
+    --gray: #322b28;
+    --orange: #d1a433;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--zilla);
+    background-color: black;
+    color: white;
+}

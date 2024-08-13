@@ -1,0 +1,59 @@
+@media (max-width: 1430px) {
+    .historia {
+        width: 65%;
+    }
+}
+
+@media (max-width: 992px) {
+    .historia {
+        width: 80%;
+    }
+
+    .titulo-jogos-container h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .linha-jogos {
+        width: 20.7%;
+        margin: 0 20px;
+    }
+
+    .jogos-container {
+        width: 90%;
+        column-gap: 40px;
+    }
+
+    .jogos {
+        width: 100%;
+    }
+
+    /* .jogos.rd-online,
+    .jogos.rd-dlc {
+        height: auto;
+    } */
+}
+
+@media (max-width: 665px) {
+    .titulo-jogos-container {
+        flex-direction: column;
+    }
+
+    .linha-jogos {
+        width: 85%;
+    }
+
+    .jogos-container {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .jogos h3 {
+        font-size: 2.2rem;
+    }
+
+    .jogos.rd-dlc img {
+        aspect-ratio: 1;
+    }
+}
