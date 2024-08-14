@@ -1,15 +1,23 @@
 @media (max-width: 1430px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
     .historia {
         width: 65%;
     }
 }
 
 @media (max-width: 992px) {
+    #logo-rdr {
+        width: 440px;
+    }
+    
     .historia {
         width: 80%;
     }
 
-    .titulo-jogos-container h2 {
+    .titulo-secoes h2 {
         font-size: 2rem;
         text-align: center;
     }
@@ -19,7 +27,13 @@
         margin: 0 20px;
     }
 
-    .jogos-container {
+    .linha-personagens {
+        width: 14.7%;
+        margin: 0 20px;
+    }
+
+    .jogos-container,
+    .personagens-container {
         width: 90%;
         column-gap: 40px;
     }
@@ -28,14 +42,35 @@
         width: 100%;
     }
 
-    /* .jogos.rd-online,
-    .jogos.rd-dlc {
-        height: auto;
-    } */
+    .personagens {
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer .creditos span,
+    footer p {
+        font-size: 0.95rem;
+    }
+
+    footer p {
+        margin-right: 20px;
+    }
 }
 
 @media (max-width: 665px) {
-    .titulo-jogos-container {
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    #logo-rdr {
+        width: 320px;
+    }
+    
+    .titulo-secoes {
         flex-direction: column;
     }
 
@@ -43,17 +78,60 @@
         width: 85%;
     }
 
-    .jogos-container {
+    .jogos-container,
+    .personagens-container {
         display: flex;
         flex-direction: column;
         width: 85%;
     }
 
-    .jogos h3 {
+    .jogos h3,
+    .personagens h3 {
         font-size: 2.2rem;
+        text-align: center;
     }
 
     .jogos.rd-dlc img {
         aspect-ratio: 1;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    footer .creditos span,
+    footer p {
+        font-size: 1.1em;
+    }
+
+    footer img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer p {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 28px;
+    }
+
+    .jogos h3,
+    .personagens h3 {
+        font-size: 1.5rem;
     }
 }

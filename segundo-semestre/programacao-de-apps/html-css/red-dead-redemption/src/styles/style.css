@@ -1,13 +1,24 @@
 
-h1 {
+header h1 {
     font-family: 'red-dead';
     text-align: center;
     margin: 40px 0;
-    font-size: 2.4rem;
+    font-size: 3rem;
+    letter-spacing: 1.5px;
 }
 
-h1 span {
+header h1 span {
     color: var(--red);
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+
+    font-size: 1.5rem;
+    list-style: none;
+    /* margin: 40px 70px 40px 0; */
 }
 
 .midias {
@@ -21,7 +32,7 @@ h1 span {
 }
 
 #logo-rdr {
-    width: 640px;
+    width: 500px;
     position: absolute;
     left: 50%;
     top: 40%;
@@ -43,7 +54,7 @@ h2 {
     font-size: 2.6rem;
 }
 
-p {
+.historia p {
     margin: 50px 0;
     font-size: 1.13rem;
     text-align: justify;
@@ -74,7 +85,7 @@ p {
     transition: color 0.5s ease-out;
 }
 
-.titulo-jogos-container {
+.titulo-secoes {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +99,14 @@ p {
     width: 245px;
 }
 
-.jogos-container {
+.linha-personagens {
+    height: 4px;
+    background-color: white;
+    width: 194.7px;
+}
+
+.jogos-container,
+.personagens-container {
     display: grid;
     grid-template-columns: 2;
     grid-template-rows: 3;
@@ -96,33 +114,39 @@ p {
     column-gap: 60px;
     row-gap: 30px;
 
-    margin: 0 auto;
+    margin: 0 auto 80px;
     width: 50%;
 }
 
-.jogos {
+.jogos,
+.personagens {
     width: 400px;
 }
 
-.jogos img {
+.jogos img,
+.personagens img {
     width: 100%;
 }
 
-.jogos img:hover {
-    transform: scale(1.08) rotate(1deg);
+.jogos img:hover,
+.personagens img:hover {
+    transform: scale(1.03) rotate(0.3deg);
     transition: transform 0.4s ease;
 }
 
-.jogos h3 {
+.jogos h3,
+.personagens h3 {
     margin-top: 25px;
     font-size: 1.8rem;
 }
 
-.jogos h3 a {
+.jogos h3 a,
+.personagens h3 a {
     color: white;
 }
 
-.jogos h3 a:hover {
+.jogos h3 a:hover,
+.personagens h3 a:hover {
     color: var(--orange);
     transition: color 0.3s ease-out;
 }
@@ -132,25 +156,9 @@ p {
     grid-row: 1/2;
 }
 
-.jogos.rd-1 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
 .jogos.rd-dlc {
     grid-column: 1/3;
-    grid-row: 2/3;
     width: 100%;
-}
-
-.jogos.rd-2 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.jogos.rd-online {
-    grid-column: 2/3;
-    grid-row: 3/4;
 }
 
 .jogos.rd-online img {
@@ -161,4 +169,85 @@ p {
 .jogos.rd-dlc img {
     width: 100%;
     object-fit: cover;
+}
+
+.personagens.arthur {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.personagens.bill {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.personagens.dutch {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.personagens.edgar {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.personagens.javier {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.personagens.john {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.personagens img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    height: 84%;
+}
+
+footer {
+    background: linear-gradient(205deg, rgba(0,0,0,0.35057773109243695) 10%, rgba(254,0,0,0.7035189075630253) 20%, rgba(254,0,0,0.8463760504201681) 32%, rgba(254,0,0,0.9136029411764706) 50%, rgba(254,0,0,0.8547794117647058) 68%, rgba(254,0,0,0.700717787114846) 80%, rgba(0,0,0,0.3477766106442577) 90%);
+    padding: 20px 100px;
+    font-family: var(--karla);
+    font-weight: bold;
+    color: black;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.39);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .creditos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+footer .creditos span,
+footer p {
+    line-height: 25px;
+    font-size: 1.15rem;
+}
+
+footer  a {
+    color: white;
+}
+
+footer a:hover {
+    color: var(--orange);
+    transition: color 0.4s ease;
+}
+
+footer img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+footer p {
+    margin-right: 80px;
 }

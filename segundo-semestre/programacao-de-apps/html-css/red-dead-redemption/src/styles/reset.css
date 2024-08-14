@@ -29,4 +29,5 @@ body {
     font-family: var(--zilla);
     background-color: black;
     color: white;
+    width: 100vw;
 }
