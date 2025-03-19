@@ -1,0 +1,69 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: url('../imgs/bg.jpg');
+   background-size: cover;
+   background-color: midnightblue;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.cumprimento {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+
+   margin-bottom: 20px;
+}
+
+.cumprimento div {
+   background-color: rgba(245, 245, 245, 0.133);
+   padding: 20px;
+   border-radius: 7px;
+   width: 500px;
+
+   display: flex;
+   justify-content: center;
+}
+
+.cumprimento div:last-child {
+   font-size: 2rem;
+   font-weight: bold;
+}
+
+.relogio {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+
+   background-color: rgba(245, 245, 245, 0.133);
+   padding: 40px;
+   font-size: 4.2rem;
+   border-radius: 7px;
+   letter-spacing: 3px;
+   width: 500px;
+   height: fit-content;
+}
+
+.relogio div {
+   background-color: black;
+   width: 400px;
+   height: 135px;
+   color: white;
+   padding: 10px;
+   border-radius: 7px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

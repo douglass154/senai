@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Gerador de QRCODE</title>
+</head>
+<body>
+    <video src="./video/video-bg.mp4" autoplay loop muted></video>
+    <main class="container">
+        <h1>Gerador de QR CODE</h1>
+        <div class="url-container">
+            <input type="text" id="url" placeholder="Digite a sua URL">
+            <button class="gerar-qr">Gerar QR CODE</button>
+        </div>
+        <div class="qr-code"></div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

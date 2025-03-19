@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+body {
+    background: url('../imgs/bg-school.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.507);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.192);
+    padding: 20px 40px;
+    width: 600px;
+    border-radius: 14px;
+}
+
+.container h2 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 7px black,
+        2px 2px 7px black, 
+        2px 2px 7px black;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.container form label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container form label span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 7px black,
+        2px 2px 7px black,
+        2px 2px 7px black;
+}
+
+.container form label input {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.container form label input:focus {
+    background-color: rgb(207, 207, 207);
+}
+
+.container form #btn-resultado {
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 7px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container form #btn-resultado:hover {
+    background-color: green;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 16px rgba(31, 248, 31, 0.322);
+}
+
+.container #resultado {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}

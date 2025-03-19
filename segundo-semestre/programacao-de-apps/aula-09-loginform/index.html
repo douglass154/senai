@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Login form</title>
+</head>
+<body>
+    <body>   
+        <main id="container">
+            <form id="login_form">
+                <!-- FORM HEADER -->
+                <div id="form_header">
+                    <h1>Login</h1>
+                    <i id="mode_icon" class='bx bxs-moon'></i>
+                </div>
+    
+                <!-- SOCIAL MEDIA LINKS -->
+                <div id="social_media">
+                    <!-- FACEBOOK -->
+                    <a href="#">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+    
+                    <!-- GOOGLE -->
+                    <a href="#">
+                        <i class='bx bxl-google'></i>
+                    </a>
+                    
+                    <!-- GITHUB -->
+                    <a href="#">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+                </div>
+    
+                <!-- INPUTS -->
+                <div id="inputs">
+                    <!-- NAME -->
+                    <div class="input-box">
+                        <label for="name">
+                            Name
+                            <div class="input-field">
+                                <i class='bx bxs-user'></i>
+                                <input type="text" id="name" name="name">
+                            </div>
+                        </label>
+                    </div>
+                    
+                    <!-- EMAIL -->
+                    <div class="input-box">
+                        <label for="email">
+                            E-mail
+                            <div class="input-field">
+                                <i class='bx bxs-envelope'></i>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </label>
+                    </div>
+                    
+                    <!-- PASSWORD -->
+                    <div class="input-box">
+                        <label for="password">
+                            Password
+                            <div class="input-field">
+                                <i class='bx bxs-key'></i>
+                                <input type="password" id="password" name="password">
+                            </div>
+                        </label>
+                        
+                        <!-- FORGOT PASSWORD -->
+                        <div id="forgot_password">
+                            <a href="#">
+                                Forgot your password?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- LOGIN BUTTON -->
+                <button type="submit" id="login_button">
+                    Login
+                </button>
+            </form>
+        </main>
+
+        <script src="./js/script.js"></script>
+</body>
+</html>

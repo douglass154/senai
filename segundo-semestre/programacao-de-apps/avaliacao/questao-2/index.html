@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Questão 2</title>
+</head>
+<body>
+    <main class="container">
+        <div class="title">
+            <h1>Calculadora - IMC</h1>
+            <hr>
+        </div>
+
+        <form action="#">
+            <label>
+                <span>Peso em kg</span>
+                <input type="number" id="kg">
+            </label>
+            <label>
+                <span>Altura em metros</span>
+                <input type="number" id="metros">
+            </label>
+
+            <input type="button" value="Calcular" class="btn-calcular">
+        </form>
+
+        <div class="resultado">
+            <hr>
+            <div class="informacoes">
+                <div class="imc">
+                    <span></span>
+                    <p>Seu IMC</p>
+                </div>
+
+                <p class="info-resultado"></p>
+            </div>
+            <hr>
+        </div>
+
+        <div class="link">
+            <a href="https://www.zerocal.com.br/blog/autocuidado/imc-obesidade-saiba-como-calcular-e-o-que-fazer-para-reduzir?gad_source=1&gclid=EAIaIQobChMIvZH1vpGgiQMVtgytBh1bCSRSEAAYASAAEgJcffD_BwE" target="_blank">
+                Mais informações sobre o IMC
+                <i class='bx bx-link-external'></i>
+            </a>
+        </div>        
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

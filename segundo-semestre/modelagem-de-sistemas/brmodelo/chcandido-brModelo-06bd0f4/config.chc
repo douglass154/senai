@@ -1,0 +1,16 @@
+#Config
+#Wed Sep 25 16:50:15 BRT 2024
+cfg.ancorador=true
+cfg.apagartextoaoeditar=true
+cfg.autosalvarintervalo=5
+cfg.gradelargura=23
+cfg.location.salvar=true
+cfg.location.x=-3
+cfg.location.y=0
+cfg.mostrardimensoesaomover=true
+cfg.mostrargrade=true
+cfg.mostrarids=false
+cfg.mostrartooltips=true
+cfg.propaguedeletetolines=true
+cfg.recentes=T\:\\douglas-sjs\\banco_de-dados\\Logic-models\\biblioteca_md_logico.brM3;T\:\\douglas-sjs\\banco_de-dados\\biblioteca.brM3
+cfg.tipodefault=0
